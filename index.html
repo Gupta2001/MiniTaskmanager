@@ -7,6 +7,7 @@
     <title>Monster Killer</title>
     <link rel="stylesheet" href="sty.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
   </head>
   <body>
     <section id="headd">
@@ -15,51 +16,67 @@
     <section id="controls">
       <button id="Create-btn">Create task</button>
       <button id="Assign-btn">Assign a task to a user</button>
-      <button id="Update-btn">Update Task </button>
+      <button id="Update-btn">Update Task</button>
       <button id="Delete-btn">Delete task</button>
       <button id="View-btn">View task based on the date and priority</button>
-      <button id="Drag-btn">Being able to drag and drop task from one priority to another </button>
+      <button id="Drag-btn">
+        Being able to drag and drop task from one priority to another
+      </button>
     </section>
 
     <section id="Box">
+      <div class="input-group">
+        <div class="form-outline">
+          <input
+            id="search-focus"
+            type="search"
+            id="form1"
+            class="form-control"
+          />
+          <label class="form-label" for="form1">Search</label>
+        </div>
+        <button type="button" class="btn btn-primary">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
 
-        <div class="input-group">
-            <div class="form-outline">
-              <input id="search-focus" type="search" id="form1" class="form-control" />
-              <label class="form-label" for="form1">Search</label>
-            </div>
-            <button type="button" class="btn btn-primary">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-
-
-<table id="employee" class="table table-bordered table table-hover" cellspacing="0" width="100%">
-     <colgroup><col><col><col></colgroup>
-      <thead>
-      <tr>
+      <table
+        id="employee"
+        class="table table-bordered table table-hover"
+        cellspacing="0"
+        width="100%"
+      >
+        <colgroup>
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <thead>
+          <tr>
             <th>Id</th>
-            <th >Messages</th>
+            <th>Messages</th>
             <th>Priority</th>
             <th>Assign_to</th>
             <th>Assign_Name</th>
             <th>Created_on</th>
             <th>Due_Date</th>
-      </tr>
-      </thead>
-      <tbody id="emp_body">
-        <tr>
-            <td>122</td>
-            <td>"HI"</td>
-        </tr>
-       
-      </tbody>
-</table>
-<div id="pager">
-      <ul id="pagination" class="pagination-sm"></ul>
-</div>
+          </tr>
+        </thead>
+        <tbody id="emp_body">
+          <tr>
+            <td>4543</td>
+            <td>goood</td>
+            <td>3</td>
+            <td>Prabhat</td>
+            <td>2022-01-06 08:43:40</td>
+            <td>2022-01-06 08:23:23</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="pager">
+        <ul id="pagination" class="pagination-sm"></ul>
+      </div>
     </section>
-
-   
   </body>
 </html>
