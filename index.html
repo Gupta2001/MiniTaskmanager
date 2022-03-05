@@ -7,6 +7,7 @@
     <title>Monster Killer</title>
     <link rel="stylesheet" href="sty.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
   </head>
   <body>
     <section id="headd">
@@ -15,60 +16,74 @@
     <section id="controls">
       <button id="Create-btn">Create task</button>
       <button id="Assign-btn">Assign a task to a user</button>
-      <button id="Update-btn">Update Task </button>
+      <button id="Update-btn">Update Task</button>
       <button id="Delete-btn">Delete task</button>
       <button id="View-btn">View task based on the date and priority</button>
-      <button id="Drag-btn">Being able to drag and drop task from one priority to another </button>
+      <button id="Drag-btn">
+        Being able to drag and drop task from one priority to another
+      </button>
     </section>
 
     <section id="Box">
-
-        <div class="container">  
-            <br/>   
-            <div class="row justify-content-center">  
-                                <div class="col-12 col-md-10 col-lg-8">  
-                                    <form class="card card-sm">  
-                                        <div class="card-body row no-gutters align-items-center">  
-                                            <div class="col-auto">  
-                                                <i class="fas fa-search h4 text-body"> </i>  
-                                            </div>  
-                                                 <div class="col">  
-                                                <input class="form-control form-control-lg form-control-borderless" id="bttn" type="search" placeholder="Search topics or keywords here...?>  
-                                            </div>  
-                                                       <div class="col-auto">  
-                                                <button class="btn btn-lg btn-success" type="submit"> Search </button> 
-                                                <button class="btn btn-lg btn-server" type="submit"> Create Server </button>  
-                                            </div>  
-                                             
-                                        </div>  
-                                    </form>  
-                                </div>  
-                                  </div>  
-        </div>  
-<table id="employee" class="table table-bordered table table-hover" cellspacing="0" width="100%">
-     <colgroup><col><col><col></colgroup>
-      <thead>
-      <tr>
+      <div class="container">
+        <br />
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <form class="card card-sm">
+              <div class="card-body row no-gutters align-items-center">
+                <div class="col-auto">
+                  <i class="fas fa-search h4 text-body"> </i>
+                </div>
+                <div class="col">
+                  <input class="form-control form-control-lg
+                  form-control-borderless" id="bttn" type="search"
+                  placeholder="Search topics or keywords here...?>
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-lg btn-success" type="submit">
+                    Search
+                  </button>
+                  <button class="btn btn-lg btn-server" type="submit">
+                    Create Server
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <table
+        id="employee"
+        class="table table-bordered table table-hover"
+        cellspacing="0"
+        width="100%"
+      >
+        <colgroup>
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <thead>
+          <tr>
             <th>Id</th>
-            <th >Messages</th>
+            <th>Messages</th>
             <th>Priority</th>
             <th>Assign_to</th>
             <th>Assign_Name</th>
             <th>Created_on</th>
             <th>Due_Date</th>
-      </tr>
-      </thead>
-      <tbody id="emp_body">
-        <tr>
+          </tr>
+        </thead>
+        <tbody id="emp_body">
+          <tr>
             <td>122</td>
             <td>"HI"</td>
-        </tr>
-       
-      </tbody>
-</table>
-<div id="pager">
-      <ul id="pagination" class="pagination-sm"></ul>
-</div>
+          </tr>
+        </tbody>
+      </table>
+      <div id="pager">
+        <ul id="pagination" class="pagination-sm"></ul>
+      </div>
     </section>
 
     <script src="filejs/index.js"></script>
